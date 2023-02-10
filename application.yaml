@@ -8,8 +8,10 @@ spec:
 
   source:
     repoURL: https://github.com/Shaunic07/Helm.git
+    targetRevision: 1.16.0
     chart: gcp-switch
-    targetRevision: '>1.16.0'
+    helm:
+      releaseName: gcp-switch
   destination:
     server: https://kubernetes.default.svc
     namespace: shaun
