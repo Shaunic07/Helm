@@ -1,4 +1,4 @@
-apiversion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: myapp-argo-application
@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/Shaunic07/Helm.git
     chart: gcp-switch
-    targetRevision: HEAD
+    targetRevision: '>1.16.0'
   destination:
     server: https://kubernetes.default.svc
     namespace: shaun
